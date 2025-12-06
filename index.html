@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="weather.png">
+    <title>WeatherWand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="title">WeatherWand</h1>
+
+        <form>
+            <input type="text" id="name" placeholder="Search city..." autocomplete="off">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button type="button" id="locationBtn" title="Get your live location">
+                <i class="fa-solid fa-location-dot"></i>
+            </button>
+        </form>
+
+        <section class="result">
+
+            <figure class="name">
+                <figcaption>London</figcaption>
+                <img src="https://flagsapi.com/GB/shiny/32.png">
+            </figure>
+
+            <figure class="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png">
+                <figcaption>
+                    <span>31</span><sup>°</sup>C
+                </figcaption>
+            </figure>
+
+            <p class="description">overcast clouds</p>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">98</span>%<br>
+                    Clouds
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">98</span>%<br>
+                    Humidity
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">1011</span>hPa<br>
+                    Pressure
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>⚠ Location accuracy may vary</p>
+        <p>Developed by <strong>Sandhya</strong></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
